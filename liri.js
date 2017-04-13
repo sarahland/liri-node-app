@@ -82,10 +82,6 @@ function twitter() {
     });
 }
 
-
-
-
-
 //SPOTIFY________________________________________________________
 
 function spotify() {
@@ -102,7 +98,7 @@ function spotify() {
                 return;
             }
             // DO SOMETHING WITH 'data'
-            console.log("---------------------------------------------------");
+            console.log("-------------");
             console.log(" ");
             console.log("The song you entered was " + value + ".");
             console.log(" ");
@@ -129,7 +125,7 @@ function spotify() {
                     return;
                 }
                 // DO SOMETHING WITH 'data'
-                console.log("---------------------------------------------------");
+                console.log("-----------------------");
                 console.log(" ");
                 console.log("Since you didnt enter a song here is the following: ");
                 console.log(" ");
@@ -139,18 +135,13 @@ function spotify() {
                 console.log(" ");
                 console.log("Preview URL: " + data.tracks.items[0].preview_url);
                 console.log(" ");
-                console.log("---------------------------------------------------");
+                console.log("-----------------------");
             });
         }
 
     }
 }
-
-
-
-
-
-//IMDB________________________________________________________
+//IMDB
 
 function imdb() {
 
@@ -165,7 +156,7 @@ function imdb() {
         if (value != false) {
 
             // PARSE THE BODY OF THE SITE WITH THE FOLLWING INFORMATION 
-            console.log("======================================================================");
+            console.log("=====================");
             console.log("The movie's name is: " + JSON.parse(body).Title);
             console.log("");
             console.log("The movie was released in: " + JSON.parse(body).Year);
@@ -194,7 +185,7 @@ function imdb() {
             request('http://www.omdbapi.com/?t=mr+nobody&y=&plot=short&tomatoes=true&r=json', function(error, response, body) {
 
                 // PARSE THE BODY OF THE SITE WITH THE FOLLWING INFORMATION 
-                console.log("======================================================================");
+                console.log("============================");
                 console.log("The movie's name is: " + JSON.parse(body).Title);
                 console.log("");
                 console.log("The movie was released in: " + JSON.parse(body).Year);
@@ -218,7 +209,7 @@ function imdb() {
     });
 }
 
-//do-what-it-says________________________________________________
+//do-what-it-says_____
 
 function dwis() {
 
@@ -245,9 +236,6 @@ function dwis() {
             // console.log(command);
             // console.log(parameter);
         }
-        // PRINTS THE CONTENTS OF DATA WHICH IS IN RESULT 
-        //console.log(result);
-
         // if (result != false) {
         parameter = parameter.replace('"', '');
         parameter = parameter.replace('"', '');
